@@ -88,6 +88,10 @@ dLabels = setdiff(colnames(total), iDs)
 melted      = melt(total, id = iDs, measure.vars = dLabels)
 
 
+## What didn't work
+#finalData   = dcast(melted, subject + Activity_Label ~ variable.names() , mean)
+#write.table(finalData, file = "./finalData.txt")
+
 ## and here is where I've failed...I cannot figure out how to create the final
 ## bloody table....I've tried like 5 things and I keep getting various errors....submitting
 ## for now in the hopes of partial credit.
